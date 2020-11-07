@@ -64,7 +64,7 @@
                                 style="text-transform: uppercase;"
 
                             >
-                                <template v-slot:item.action="{item}">
+                                <template v-slot:[`item.action`]="{item}">
                                     <v-icon
                                         color="#d20817"
                                         class="red--text pa-1 ma-1 text-uppercase rounded-lg"

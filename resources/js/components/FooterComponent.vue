@@ -16,7 +16,7 @@
                             height="62px"
                             width="220px"
                             src="/images/logo.png"
-                        ></img>
+                        />
                     </v-card-title>
                     <v-card-text class="text-center pb-0">
                         CONECTANDO A TODO EL PERÚ <br>
