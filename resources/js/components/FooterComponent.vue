@@ -41,7 +41,7 @@
                                     </v-btn>
                                 </div>
                             </v-col>-->
-                            <v-col md="12" cols="12" class="py-0">
+                            <v-col md="12" cols="12" class="py-2">
                                 <div class="text-center mb-5">
                                     Siguenos en:
                                     <v-btn

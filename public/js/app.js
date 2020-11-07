@@ -7422,7 +7422,7 @@ var render = function() {
                           _c(
                             "v-col",
                             {
-                              staticClass: "py-0",
+                              staticClass: "py-2",
                               attrs: { md: "12", cols: "12" }
                             },
                             [
