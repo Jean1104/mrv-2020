@@ -2448,18 +2448,18 @@ __webpack_require__.r(__webpack_exports__);
     return {
       items: [{
         icon: 'mdi-history',
-        src: '/images/servicio-transporte-carga.png',
+        src: '/images/web-conocenos-nuestrahistoria.png',
         name: 'NUESTRA',
         name2: 'HISTORIA',
         text: 'Somos una empresa familiar que nace en la ciudad de Arequipa el 01 de mayo de 1989, iniciamos con dos vehículos que nos permitieron conectar las principales ciudades del sur como: Arequipa, Juliaca, Puno, Cusco y Tacna. En el año 2002 abrimos la primera sucursal de Lima, iniciando así la expansión soñada; con sacrificio y perseverancia hemos permanecido en este mercado, para poder formar parte de tu crecimiento empresarial.'
       }, {
         icon: 'mdi-nature-people',
-        src: '/images/servicio-transporte-carga.png',
+        src: '/images/web-conocenos-mision.png',
         name: 'MISIÓN',
         text: 'Somos una empresa con mayor cobertura a nivel nacional en el transporte de mercancías por vías terrestre, brindando un servicio de calidad ya que contamos con una solida cultura organizacional, lo que nos permite promover el desarrollo integral de nuestro personal y mantener una estrecha relación con los clientes, para poder consolidarnos como la empresa lider a nivel nacional.'
       }, {
         icon: 'mdi-eye',
-        src: '/images/servicio-transporte-carga.png',
+        src: '/images/web-conocenos-vision.jpg',
         name: 'VISIÓN',
         text: 'consolidarnos como la empresa líder en el transporte de mercancías por vía terrestre, expandiéndonos por nuevos mercados para ser la empresa más rápida, sergura y con calidad de servicio a nivel nacional.'
       }]
@@ -3251,8 +3251,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_FooterComponent_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/FooterComponent.vue */ "./resources/js/components/FooterComponent.vue");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-//
-//
 //
 //
 //
@@ -5413,7 +5411,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".Cuerpo[data-v-03bf6d6c] {\n  margin-top: 92px;\n  margin-bottom: 290px;\n}\n.empleoslogo[data-v-03bf6d6c] {\n  width: 350px;\n  height: 362px;\n}\n@media (max-width: 900px) {\n.Cuerpo[data-v-03bf6d6c] {\n    margin-top: 82px;\n    margin-bottom: 343px;\n}\n.empleoslogo[data-v-03bf6d6c] {\n    width: 220px;\n    height: 270px;\n}\n}\n.portada[data-v-03bf6d6c] {\n  width: 100%;\n  height: 300px;\n}\n.cuadroProvincia[data-v-03bf6d6c] {\n  background-color: white;\n  border: 2px solid #d20817;\n  height: 110px;\n}\n.enviacv[data-v-03bf6d6c] {\n  background-color: #f1f1f1;\n}\n.cerrar[data-v-03bf6d6c] {\n  text-align: left;\n}\n.tablacenter[data-v-03bf6d6c] {\n  text-align: center;\n}\n.v-data-table > .v-data-table__wrapper > table > tbody > tr > td[data-v-03bf6d6c], .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td[data-v-03bf6d6c], .v-data-table > .v-data-table__wrapper > table > thead > tr > td[data-v-03bf6d6c] {\n  font-size: 0.875rem;\n  height: 48px;\n  text-transform: uppercase;\n}", ""]);
+exports.push([module.i, ".Cuerpo[data-v-03bf6d6c] {\n  margin-top: 92px;\n  margin-bottom: 290px;\n}\n.empleoslogo[data-v-03bf6d6c] {\n  width: 350px;\n  height: 362px;\n}\n@media (max-width: 900px) {\n.Cuerpo[data-v-03bf6d6c] {\n    margin-top: 82px;\n    margin-bottom: 343px;\n}\n.empleoslogo[data-v-03bf6d6c] {\n    width: 220px;\n    height: 270px;\n}\n}\n.portada[data-v-03bf6d6c] {\n  width: 100%;\n  height: 400px;\n}\n.cuadroProvincia[data-v-03bf6d6c] {\n  background-color: white;\n  border: 2px solid #d20817;\n  height: 110px;\n}\n.enviacv[data-v-03bf6d6c] {\n  background-color: #f1f1f1;\n}\n.cerrar[data-v-03bf6d6c] {\n  text-align: left;\n}\n.tablacenter[data-v-03bf6d6c] {\n  text-align: center;\n}\n.v-data-table > .v-data-table__wrapper > table > tbody > tr > td[data-v-03bf6d6c], .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td[data-v-03bf6d6c], .v-data-table > .v-data-table__wrapper > table > thead > tr > td[data-v-03bf6d6c] {\n  font-size: 0.875rem;\n  height: 48px;\n  text-transform: uppercase;\n}", ""]);
 
 // exports
 
@@ -9583,27 +9581,12 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _c(
-            "v-card",
-            {
-              staticClass: "mb-7 mt-0",
-              attrs: { "hide-delimiters": "", flat: "" }
-            },
-            [
-              _c(
-                "div",
-                [
-                  _c("v-img", {
-                    staticClass: "portada",
-                    attrs: {
-                      src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
-                    }
-                  })
-                ],
-                1
-              )
-            ]
-          ),
+          _c("v-card", { staticClass: "mb-7 mt-0", attrs: { flat: "" } }, [
+            _c("img", {
+              staticClass: "portada",
+              attrs: { src: "/images/web-marvisur-empleos.png" }
+            })
+          ]),
           _vm._v(" "),
           _c(
             "v-card",
@@ -76387,7 +76370,7 @@ var opts = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\marvisur\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/Joss/Documents/laravel8/mrv-2020/resources/js/app.js */"./resources/js/app.js");
 
 
 /***/ })

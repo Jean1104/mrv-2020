@@ -27,13 +27,11 @@
                 </div>
             </v-card>
             <v-card
-                hide-delimiters
                 flat
                 class="mb-7 mt-0"
             >
-                <div>
-                    <v-img class="portada" src="https://cdn.vuetifyjs.com/images/carousel/sky.jpg"></v-img>
-                </div>
+                <img class="portada" src="/images/web-marvisur-empleos.png">
+
             </v-card>
             <v-card
                 color="#efefef"
@@ -500,7 +498,7 @@
     }
     .portada{
         width: 100%;
-        height: 300px;
+        height: 400px;
     }
     .cuadroProvincia{
         background-color: white;
