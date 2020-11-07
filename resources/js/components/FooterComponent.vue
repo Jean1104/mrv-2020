@@ -42,7 +42,7 @@
                                 </div>
                             </v-col>-->
                             <v-col md="12" cols="12" class="py-2">
-                                <div class="text-center mb-5">
+                                <div class="text-center my-2">
                                     Siguenos en:
                                     <v-btn
                                         v-for="icon in icons"
