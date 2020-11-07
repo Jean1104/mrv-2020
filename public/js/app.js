@@ -9640,34 +9640,38 @@ var render = function() {
                                 _vm.pageCount = $event
                               }
                             },
-                            scopedSlots: _vm._u([
-                              {
-                                key: "item.action",
-                                fn: function(ref) {
-                                  var item = ref.item
-                                  return [
-                                    _c(
-                                      "v-icon",
-                                      {
-                                        staticClass:
-                                          "red--text pa-1 ma-1 text-uppercase rounded-lg",
-                                        attrs: { color: "#d20817", dark: "" },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.postular(item)
+                            scopedSlots: _vm._u(
+                              [
+                                {
+                                  key: "item.action",
+                                  fn: function(ref) {
+                                    var item = ref.item
+                                    return [
+                                      _c(
+                                        "v-icon",
+                                        {
+                                          staticClass:
+                                            "red--text pa-1 ma-1 text-uppercase rounded-lg",
+                                          attrs: { color: "#d20817", dark: "" },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.postular(item)
+                                            }
                                           }
-                                        }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                    mdi-folder-plus\n                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                                    mdi-folder-plus\n                                "
+                                          )
+                                        ]
+                                      )
+                                    ]
+                                  }
                                 }
-                              }
-                            ])
+                              ],
+                              null,
+                              true
+                            )
                           }),
                           _vm._v(" "),
                           _c(
@@ -76370,7 +76374,7 @@ var opts = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Joss/Documents/laravel8/mrv-2020/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\marvisur\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })
