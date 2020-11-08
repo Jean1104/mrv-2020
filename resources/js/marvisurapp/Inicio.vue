@@ -6,7 +6,6 @@
             <v-carousel
                 cycle
                 hide-delimiters
-                show-arrows-on-hover
                 height="500"
                 width= "100%"
             >
