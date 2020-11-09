@@ -9,8 +9,10 @@ class CotizaruserController extends Controller
 {
     //
     public function cotizacion(Request $request) {
-
-        $path_imagen = $request->file('imagen')->store('cotizaciones');
+        //dd($request->file('imagen'));
+        if($request->file('imagen') != null){
+            $path_imagen = $request->file('imagen')->store('cotizaciones');
+        }
 
         $cotizaruser = new Cotizaruser();
         $cotizaruser->nombre = $request->nombre;
@@ -25,7 +27,9 @@ class CotizaruserController extends Controller
         $cotizaruser->ancho = $request->ancho;
         $cotizaruser->alto = $request->alto;
         $cotizaruser->descripcion = $request->descripcion;
-        $cotizaruser->imagen = $path_imagen;
+        if($request->file('imagen') != null){
+            $cotizaruser->imagen = $path_imagen;
+        }
         $cotizaruser->save();
 
         return json_encode($cotizaruser);

@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 class SucursalController extends Controller
 {
     public function index() {
-        $depas = Departamento::all();
+        $depas = Departamento::orderBy('nombre', 'ASC')->get();
 
         $res = Array();
 

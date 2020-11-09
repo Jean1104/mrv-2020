@@ -207,7 +207,6 @@
                                         placeholder="Seleccionar archivo"
                                         prepend-icon="mdi-camera"
                                         label="Cargar Imagen: "
-                                        :rules="[rules.required]"
                                         outlined
                                         clearable
                                         shaped
