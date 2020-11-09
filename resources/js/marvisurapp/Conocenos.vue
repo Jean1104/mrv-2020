@@ -234,7 +234,7 @@
                         src: '/images/web-conocenos-nuestrahistoria.png',
                         name: 'NUESTRA',
                         name2: 'HISTORIA',
-                        text: 'Somos una empresa familiar que nace en la ciudad de Arequipa el 01 de mayo de 1989, iniciamos con dos vehículos que nos permitieron conectar las principales ciudades del sur como: Arequipa, Juliaca, Puno, Cusco y Tacna. En el año 2002 abrimos la primera sucursal de Lima, iniciando así la expansión soñada; con sacrificio y perseverancia hemos permanecido en este mercado, para poder formar parte de tu crecimiento empresarial.'
+                        text: 'Somos una empresa familiar que nace en la ciudad de Arequipa el 01 de mayo de 1989, iniciamos con dos vehículos que nos permitieron conectar las principales ciudades del sur como: Arequipa, Juliaca, Puno y Cusco. En el año 2002 abrimos la primera sucursal de Lima, iniciando así la expansión soñada; con sacrificio y perseverancia hemos permanecido en este mercado, para poder formar parte de tu crecimiento empresarial.'
                     },
                     {
                         icon: 'mdi-nature-people',
