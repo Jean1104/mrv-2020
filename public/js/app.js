@@ -4166,8 +4166,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_name$components$data = {
@@ -4192,6 +4190,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       src: '/images/imageninicio3.jpg'
     }, {
       src: '/images/imageninicio4.jpg'
+    }],
+    noticias: [{
+      src: '/images/web-conocenos-mision.png',
+      subtitulo: 'well meaning and kindly. a benevolent smile',
+      titulo: 'Noticia 1'
+    }, {
+      src: '/images/web-conocenos-mision.png',
+      subtitulo: 'notice well meaning and kindly. a benevolent smile',
+      titulo: 'Noticia 2'
+    }, {
+      src: '/images/web-conocenos-mision.png',
+      subtitulo: 'notice well meaning and kindly. a benevolent smile',
+      titulo: 'Noticia 3'
     }]
   };
 }), _defineProperty(_name$components$data, "mounted", function mounted() {
@@ -5582,7 +5593,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.SecondSection{\n    margin: 10px;\n}\n.ThirdSection{\n    margin: 10px;\n}\n.Cuerpo{\n    margin-top: 78px;\n    margin-bottom: 300px;\n}\n@media (max-width: 900px) {\n.Cuerpo{\n        margin-top: 78px;\n        margin-bottom: 320px;\n}\n}\n.nuestrosServicios{\n    background-color: #d20817;\n}\n.iconoservicios{\n    height: 152px;\n    margin-bottom: 12px;\n    text-align: center;\n}\n.imagenicono{\n    padding-top: 16px;\n}\n.iconorastrea{\n    height: 152px;\n    margin-bottom: 12px;\n    text-align: center;\n}\n.v-card--reveal {\n    align-items: center;\n    bottom: 0;\n    justify-content: center;\n    opacity: .5;\n    position: absolute;\n    width: 100%;\n}\n", ""]);
+exports.push([module.i, "\n.SecondSection{\n    margin: 10px;\n}\n.ThirdSection{\n    margin: 10px;\n}\n.noticiasSection{\n    margin: 0px;\n}\n.Cuerpo{\n    margin-top: 78px;\n    margin-bottom: 300px;\n}\n.noticiaimg{\n    height: 110px;\n    width: 100%;\n}\n.noticiaprincipal{\n    width: 100%;\n    height: 300px;\n}\n@media (max-width: 900px) {\n.Cuerpo{\n        margin-top: 78px;\n        margin-bottom: 320px;\n}\n.noticiaimg{\n        height: 100px;\n        width: 100%;\n}\n.noticiaprincipal{\n        width: 100%;\n        height: 100px;\n}\n}\n.nuestrosServicios{\n    background-color: #d20817;\n}\n.iconoservicios{\n    height: 152px;\n    margin-bottom: 12px;\n    text-align: center;\n}\n.imagenicono{\n    padding-top: 16px;\n}\n.iconorastrea{\n    height: 152px;\n    margin-bottom: 12px;\n    text-align: center;\n}\n.v-card--reveal {\n    align-items: center;\n    bottom: 0;\n    justify-content: center;\n    opacity: .5;\n    position: absolute;\n    width: 100%;\n}\n.v-list-item__subtitle, .v-list-item__title {\n    flex: 1 1 100%;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: inherit;\n}\n", ""]);
 
 // exports
 
@@ -7428,7 +7439,7 @@ var render = function() {
                             [
                               _c(
                                 "div",
-                                { staticClass: "text-center mb-5" },
+                                { staticClass: "text-center my-2 " },
                                 [
                                   _vm._v(
                                     "\n                                Siguenos en:\n                                "
@@ -9640,34 +9651,38 @@ var render = function() {
                                 _vm.pageCount = $event
                               }
                             },
-                            scopedSlots: _vm._u([
-                              {
-                                key: "item.action",
-                                fn: function(ref) {
-                                  var item = ref.item
-                                  return [
-                                    _c(
-                                      "v-icon",
-                                      {
-                                        staticClass:
-                                          "red--text pa-1 ma-1 text-uppercase rounded-lg",
-                                        attrs: { color: "#d20817", dark: "" },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.postular(item)
+                            scopedSlots: _vm._u(
+                              [
+                                {
+                                  key: "item.action",
+                                  fn: function(ref) {
+                                    var item = ref.item
+                                    return [
+                                      _c(
+                                        "v-icon",
+                                        {
+                                          staticClass:
+                                            "red--text pa-1 ma-1 text-uppercase rounded-lg",
+                                          attrs: { color: "#d20817", dark: "" },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.postular(item)
+                                            }
                                           }
-                                        }
-                                      },
-                                      [
-                                        _vm._v(
-                                          "\n                                    mdi-folder-plus\n                                "
-                                        )
-                                      ]
-                                    )
-                                  ]
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                                    mdi-folder-plus\n                                "
+                                          )
+                                        ]
+                                      )
+                                    ]
+                                  }
                                 }
-                              }
-                            ])
+                              ],
+                              null,
+                              true
+                            )
                           }),
                           _vm._v(" "),
                           _c(
@@ -10770,7 +10785,6 @@ var render = function() {
                   attrs: {
                     cycle: "",
                     "hide-delimiters": "",
-                    "show-arrows-on-hover": "",
                     height: "500",
                     width: "100%"
                   }

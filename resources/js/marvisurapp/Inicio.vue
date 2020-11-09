@@ -57,7 +57,6 @@
                 >
                     <v-hover
                         v-slot="{ hover }"
-
                     >
                         <v-card
                             :elevation="hover ? 16 : 2"
@@ -233,6 +232,23 @@
                         src: '/images/imageninicio4.jpg',
                     },
                 ],
+                noticias: [
+                    {
+                        src: '/images/web-conocenos-mision.png',
+                        subtitulo: 'well meaning and kindly. a benevolent smile',
+                        titulo: 'Noticia 1'
+                    },
+                    {
+                        src: '/images/web-conocenos-mision.png',
+                        subtitulo: 'notice well meaning and kindly. a benevolent smile',
+                        titulo: 'Noticia 2'
+                    },
+                    {
+                        src: '/images/web-conocenos-mision.png',
+                        subtitulo: 'notice well meaning and kindly. a benevolent smile',
+                        titulo: 'Noticia 3'
+                    },
+                ]
             };
         },
 
@@ -249,15 +265,34 @@
     .ThirdSection{
         margin: 10px;
     }
+    .noticiasSection{
+        margin: 0px;
+    }
 
     .Cuerpo{
         margin-top: 78px;
         margin-bottom: 300px;
     }
+    .noticiaimg{
+        height: 110px;
+        width: 100%;
+    }
+    .noticiaprincipal{
+        width: 100%;
+        height: 300px;
+    }
     @media (max-width: 900px) {
         .Cuerpo{
             margin-top: 78px;
             margin-bottom: 320px;
+        }
+        .noticiaimg{
+            height: 100px;
+            width: 100%;
+        }
+        .noticiaprincipal{
+            width: 100%;
+            height: 100px;
         }
     }
     .nuestrosServicios{
@@ -284,5 +319,11 @@
         opacity: .5;
         position: absolute;
         width: 100%;
+    }
+    .v-list-item__subtitle, .v-list-item__title {
+        flex: 1 1 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: inherit;
     }
 </style>
