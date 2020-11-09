@@ -498,7 +498,6 @@
     }
     .portada{
         width: 100%;
-        height: 400px;
     }
     .cuadroProvincia{
         background-color: white;

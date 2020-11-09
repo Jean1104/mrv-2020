@@ -7,8 +7,7 @@
                 cycle
                 hide-delimiters
                 show-arrows-on-hover
-                height="500"
-                width= "100%"
+                height="auto"
             >
                 <v-carousel-item
                     v-for="(slide, i) in slides"
