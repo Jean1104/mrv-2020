@@ -84,16 +84,15 @@
                 </v-col>
             </v-row>
         </div>
-        <div class="ThirdSection" style="margin: 10px;">
+        <div class="ThirdSection">
             <v-card
-                class="mx-auto"
+                class="my-4 mx-0"
                 max-width="100%"
                 flat
             >
                 <v-card
                     color="#ffe3b2"
                     style="border-radius: 0;"
-                    class="mt-3"
                     flat
                 >
                     <div
@@ -207,10 +206,11 @@
         },
 
         data: () => ({
-            show: false
+            show: false,
         }),
         data() {
             return {
+                model: null,
                 colors: [
                     "indigo",
                     "warning",
@@ -234,26 +234,54 @@
                 ],
                 noticias: [
                     {
-                        src: '/images/web-conocenos-mision.png',
-                        subtitulo: 'well meaning and kindly. a benevolent smile',
-                        titulo: 'Noticia 1'
+                        src: 'https://cdn.vuetifyjs.com/images/cards/sunshine.jpg',
+                        subtitulo: 'well meaning and kindly.',
+                        titulo: 'Noticia 1',
+                        descripcion: 'consolidarnos como la empresa líder en el transporte de mercancías por vía terrestre, expandiéndonos por nuevos mercados para ser la empresa más rápida, sergura y con calidad de servicio a nivel nacional.'
                     },
                     {
-                        src: '/images/web-conocenos-mision.png',
-                        subtitulo: 'notice well meaning and kindly. a benevolent smile',
-                        titulo: 'Noticia 2'
+                        src: 'https://picsum.photos/510/300?random',
+                        subtitulo: 'notice',
+                        titulo: 'Noticia 2 Turns out semicolon-less style',
+                        descripcion: 'consolidarnos como la empresa líder en el transporte de mercancías por vía terrestre.'
                     },
                     {
-                        src: '/images/web-conocenos-mision.png',
-                        subtitulo: 'notice well meaning and kindly. a benevolent smile',
-                        titulo: 'Noticia 3'
+                        src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg',
+                        subtitulo: 'notice well and kindly',
+                        titulo: 'Noticia 5',
+                        descripcion: 'Expandiéndonos por nuevos mercados para ser la empresa más rápida, sergura y con calidad de servicio a nivel nacional.'
                     },
-                ]
+                    {
+                        src: 'https://picsum.photos/510/300?random',
+                        subtitulo: 'well',
+                        titulo: 'Noticia 3',
+                        descripcion: 'consolidarnos como la empresa líder en el transporte de mercancías por vía terrestre, expandiéndonos por nuevos mercados para ser la empresa más rápida.'
+                    },
+                    {
+                        src: 'https://picsum.photos/510/300?random',
+                        subtitulo: 'meaning and kindly',
+                        titulo: 'Noticia 4',
+                        descripcion: 'consolidarnos como la empresa líder en el transporte de mercancías por vía terrestre, expandiéndonos por nuevos.'
+                    },
+                ],
+                noticia: {
+                    src: '',
+                    titulo: '',
+                    subtitulo: '',
+                    descripcion: ''
+                }
             };
+        },
+        methods: {
+            mostrar_noticia : function(noticia){
+                console.log(noticia);
+                this.noticia = noticia;
+            }
         },
 
         mounted() {
             console.log("Example component mounted");
+            this.noticia = this.noticias[1];
         }
     };
 </script>
@@ -263,7 +291,7 @@
         margin: 10px;
     }
     .ThirdSection{
-        margin: 10px;
+        margin-top: 30px;
     }
     .noticiasSection{
         margin: 0px;
@@ -274,7 +302,7 @@
         margin-bottom: 300px;
     }
     .noticiaimg{
-        height: 110px;
+        height: 200px;
         width: 100%;
     }
     .noticiaprincipal{
@@ -287,12 +315,12 @@
             margin-bottom: 320px;
         }
         .noticiaimg{
-            height: 100px;
+            height: 200px;
             width: 100%;
         }
         .noticiaprincipal{
             width: 100%;
-            height: 100px;
+            height: 150px;
         }
     }
     .nuestrosServicios{
